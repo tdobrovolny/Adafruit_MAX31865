@@ -72,6 +72,9 @@ public:
   uint8_t readFault(void);
   void clearFault(void);
   uint16_t readRTD();
+  void readRTDPrepare(void);
+  void readRTDSend(void);
+  uint16_t readRTDGet(void);
 
   void setWires(max31865_numwires_t wires);
   void autoConvert(bool b);
